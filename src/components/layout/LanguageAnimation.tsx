@@ -2,7 +2,7 @@
 
 import { useMemo, useRef, useState } from 'react';
 import Lottie, { type LottieRefCurrentProps } from 'lottie-react';
-import { helloLootieSpanish, helloLottie } from '../constants/hello-lootie';
+import { helloLootieSpanish, helloLottie } from '../../constants/hello-lootie';
 import { twMerge } from 'tailwind-merge';
 
 interface LanguageAnimationProps {
@@ -72,7 +72,7 @@ export default function LanguageAnimation({
   return (
     <div>
       <button
-        className="w-fit cursor-pointer text-left text-sm font-light tracking-tight text-black hover:underline"
+        className="w-fit cursor-pointer text-left text-sm font-light tracking-tight text-foreground hover:underline"
         onClick={handleTrigger}
       >
         {language === 'es' ? 'Spanish' : 'English'}

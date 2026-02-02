@@ -1,4 +1,4 @@
-import Link from 'next/link';
+import { Link } from '@/src/i18n/routing';
 import { twMerge } from 'tailwind-merge';
 
 interface AsideLinkProps {
@@ -10,12 +10,7 @@ interface AsideLinkProps {
 
 export function AsideLink({ href, label, type, externalLink }: AsideLinkProps) {
   return (
-    <li
-      className={twMerge(
-        'w-fit',
-        type === 'sub' && 'ml-2 text-[#5B5B5B] hover:text-black',
-      )}
-    >
+    <li className={twMerge('w-fit text-foreground', type === 'sub' && 'ml-2')}>
       <Link
         href={href}
         target={externalLink ? '_blank' : '_self'}

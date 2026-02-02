@@ -1,0 +1,15 @@
+{
+  "aside": {
+    "role": "Ingeniero de Software & Diseñador",
+    "nav": {
+      "home": "Inicio",
+      "about": "Acerca de",
+      "software": "Software",
+      "design": "Diseño",
+      "photos": "Fotos"
+    },
+    "sections": { "contact": "Contacto", "theme": "Tema" },
+    "actions": { "cv": "CV" },
+    "location": "León, Gto. México"
+  }
+}

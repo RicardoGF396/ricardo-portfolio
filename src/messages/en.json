@@ -1,0 +1,37 @@
+{
+  "aside": {
+    "role": "Software Engineer & Designer",
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "software": {
+        "name": "Software",
+        "naveo": "Naveo",
+        "pura-banda": "Pura Banda",
+        "adgen": "Adgen",
+        "don-cheto-app": "Don Cheto App",
+        "cvlens": "CVLens",
+        "crieg": "Crieg",
+        "shopfloor-managment": "Shopfloor Managment",
+        "kiosko-movil-gto": "Kiosko móvil GTO",
+        "midbar": "Midbar",
+        "more": "More..."
+      },
+      "design": "Design",
+      "photos": "Photos"
+    },
+    "sections": {
+      "contact": "Contact",
+      "theme": {
+        "name": "Theme",
+        "dark": "Dark",
+        "light": "Light"
+      }
+    },
+    "actions": { "cv": "CV" },
+    "location": "León, Gto. México"
+  },
+  "photos": {
+    "info": "Image • My life"
+  }
+}

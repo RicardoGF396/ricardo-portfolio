@@ -1,50 +1,56 @@
 import { Variants } from 'framer-motion';
+import { useLocale, useTranslations } from 'next-intl';
+import { usePathname, useRouter } from '@/src/i18n/routing';
 import { useEffect, useMemo, useState } from 'react';
 
 export function useAsideComponent() {
   const [isOpenSoftwareProjects, setIsOpenSoftwareProjects] = useState(false);
-  const [isCVContainerOpen, setIsCVContainerOpen] = useState(true);
+  const [isCVContainerOpen, setIsCVContainerOpen] = useState(false);
   const [now, setNow] = useState<Date>(() => new Date());
+  const locale = useLocale();
+  const router = useRouter();
+  const pathname = usePathname();
+  const translations = useTranslations('aside');
 
   const projectLinks = [
     {
-      label: 'Naveo',
+      label: translations('nav.software.naveo'),
       link: '/naveo',
     },
     {
-      label: 'Pura Banda',
+      label: translations('nav.software.pura-banda'),
       link: '/pura-banda',
     },
     {
-      label: 'Adgen',
+      label: translations('nav.software.adgen'),
       link: '/adgen',
     },
     {
-      label: 'Don Cheto App',
+      label: translations('nav.software.don-cheto-app'),
       link: '/don-cheto-app',
     },
     {
-      label: 'CVLens',
+      label: translations('nav.software.cvlens'),
       link: '/cvlens',
     },
     {
-      label: 'Crieg',
+      label: translations('nav.software.crieg'),
       link: '/crieg',
     },
     {
-      label: 'Shopfloor Managment',
+      label: translations('nav.software.shopfloor-managment'),
       link: '/shopfloor-managment',
     },
     {
-      label: 'Kiosko móvil GTO',
+      label: translations('nav.software.kiosko-movil-gto'),
       link: '/kiosko-movil-gto',
     },
     {
-      label: 'Midbar',
+      label: translations('nav.software.midbar'),
       link: '/midbar',
     },
     {
-      label: 'More...',
+      label: translations('nav.software.more'),
       link: '/more',
     },
   ];
@@ -97,6 +103,11 @@ export function useAsideComponent() {
 
   const timeString = formatter.format(now);
 
+  const toggleLanguage = () => {
+    const nextLocale = locale === 'en' ? 'es' : 'en';
+    router.replace(pathname, { locale: nextLocale });
+  };
+
   useEffect(() => {
     const intervalId = window.setInterval(() => setNow(new Date()), 1000);
     return () => window.clearInterval(intervalId);
@@ -111,5 +122,8 @@ export function useAsideComponent() {
     timeString,
     isCVContainerOpen,
     setIsCVContainerOpen,
+    toggleLanguage,
+    locale,
+    translations,
   };
 }
