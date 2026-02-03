@@ -12,6 +12,7 @@ interface AnimatedThemeTogglerProps extends React.ComponentPropsWithoutRef<'butt
 export const AnimatedThemeToggler = ({
   className,
   duration = 400,
+  onClick,
   ...props
 }: AnimatedThemeTogglerProps) => {
   const [isDark, setIsDark] = useState(false);
@@ -94,7 +95,7 @@ export const AnimatedThemeToggler = ({
     <button
       ref={buttonRef}
       onClick={toggleTheme}
-      className={cn(className, 'w-fit cursor-pointer text-foreground')}
+      className={cn(className, 'w-fit cursor-pointer hover:underline text-foreground')}
       {...props}
     >
       {isDark ? translations('light') : translations('dark')}

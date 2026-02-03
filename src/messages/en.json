@@ -1,6 +1,6 @@
 {
   "aside": {
-    "role": "Software Engineer & Designer",
+    "role": "Software Engineer & UI/UX Designer",
     "nav": {
       "home": "Home",
       "about": "About",
@@ -12,8 +12,8 @@
         "don-cheto-app": "Don Cheto App",
         "cvlens": "CVLens",
         "crieg": "Crieg",
-        "shopfloor-managment": "Shopfloor Managment",
-        "kiosko-movil-gto": "Kiosko móvil GTO",
+        "shopfloor-managment": "Shopfloor Management",
+        "kiosko-movil-gto": "Kiosko Móvil GTO",
         "midbar": "Midbar",
         "more": "More..."
       },
@@ -28,10 +28,346 @@
         "light": "Light"
       }
     },
-    "actions": { "cv": "CV" },
-    "location": "León, Gto. México"
+    "actions": { "cv": "Resume" },
+    "location": "León, Guanajuato, Mexico"
   },
   "photos": {
-    "info": "Image • My life"
+    "info": "Photography • A glimpse of my life"
+  },
+  "design": {
+    "info": "Design • Selected work"
+  },
+  "projects": {
+    "naveo": {
+      "title": "Naveo",
+      "description": "Naveo is a product currently in development and market validation. Its goal is to orchestrate and assign orders for retail stores, improving operational control and efficiency. I lead the project as CEO and co-founder, and it is currently running in closed beta. All images on this page are real screenshots from the system. I built and designed the product end-to-end: database structure, security policies, user authentication, push notifications, real-time updates, the web app, the mobile app, and the landing page. In about four weeks, I reached a functional milestone with manual assignment. Later, to accelerate customer acquisition and strategic partnerships, we joined forces under a team with my colleagues called Uanify. This helped professionalize the project, and I delegated the automatic assignment module to a teammate.",
+      "coverAlt": "Naveo main view",
+      "gallery": {
+        "1": "Home screen",
+        "2": "Module detail",
+        "3": "Module detail",
+        "4": "Module detail",
+        "5": "Module detail",
+        "6": "Module detail",
+        "7": "Module detail",
+        "8": "Module detail",
+        "9": "Module detail",
+        "10": "Module detail",
+        "11": "Module detail",
+        "12": "Module detail",
+        "13": "Module detail",
+        "14": "Module detail",
+        "15": "Module detail",
+        "16": "Module detail",
+        "17": "Module detail",
+        "18": "Module detail",
+        "19": "Module detail",
+        "20": "Module detail",
+        "21": "Module detail",
+        "22": "Module detail",
+        "23": "Module detail",
+        "24": "Module detail",
+        "25": "Module detail",
+        "26": "Module detail",
+        "27": "Module detail",
+        "28": "Module detail"
+      }
+    },
+    "pura-banda": {
+      "title": "Pura Banda",
+      "description": "This app was built for a client we met through an entrepreneurship community. We had previously delivered Don Cheto App, and after establishing trust, the client reached out again to develop Pura Banda. The app streams the Pura Banda radio station and also works as a promotional platform for the broadcaster’s services and featured bands. It includes a web app where users can view voting results per band, plus an admin dashboard (band CRUD) to manage what appears in the mobile app. The product is monetized with ads, including AdMob. The app reached roughly 117k votes through its “vote for your favorite band” dynamic. The full system was hosted on a Hostinger VPS. I led the UI/UX and contributed across the web app, mobile app, and overall product design with my team at Uanify.",
+      "coverAlt": "Pura Banda main view",
+      "gallery": {
+        "1": "Home screen",
+        "2": "Module detail",
+        "3": "Module detail",
+        "4": "Module detail",
+        "5": "Module detail",
+        "6": "Module detail",
+        "7": "Module detail",
+        "8": "Module detail",
+        "9": "Module detail",
+        "10": "Module detail",
+        "11": "Module detail",
+        "12": "Module detail",
+        "13": "Module detail",
+        "14": "Module detail",
+        "15": "Module detail",
+        "16": "Module detail",
+        "17": "Module detail",
+        "18": "Module detail",
+        "19": "Module detail",
+        "19-1": "Module detail",
+        "20": "Module detail",
+        "21": "Module detail",
+        "22": "Module detail",
+        "23": "Module detail"
+      }
+    },
+    "adgen": {
+      "title": "Adgen",
+      "description": "I built this platform solo at Zeeto. The goal was to generate ad creatives at scale, driven by a real need from the design team to produce large batches of UTM-based variants for digital campaigns. The product was built on top of Konva.js for canvas-based graphics creation. Creatives could be exported as HTML5 or PNG, reducing file size by up to 70% while significantly speeding up production per UTM variation. The project reached an internal alpha stage and was used by a few teammates and me, but it did not grow further due to shifting company priorities.",
+      "coverAlt": "Adgen main view",
+      "gallery": {
+        "1": "Adgen main view",
+        "2": "Adgen main view",
+        "3": "Adgen main view",
+        "4": "Adgen main view",
+        "5": "Adgen main view",
+        "6": "Adgen main view",
+        "7": "Adgen main view",
+        "8": "Adgen main view",
+        "9": "Adgen main view",
+        "10": "Adgen main view",
+        "11": "Adgen main view",
+        "12": "Adgen main view",
+        "13": "Adgen main view",
+        "14": "Adgen main view",
+        "15": "Adgen main view",
+        "16": "Adgen main view",
+        "17": "Adgen main view",
+        "18": "Adgen main view",
+        "19": "Adgen main view",
+        "19-1": "Adgen main view",
+        "20": "Adgen main view",
+        "21": "Adgen main view",
+        "22": "Adgen main view",
+        "23": "Adgen main view",
+        "24": "Adgen main view"
+      }
+    },
+    "don-cheto-app": {
+      "title": "Don Cheto App",
+      "description": "This was the first formal client project I delivered with my team. The app was created for a radio personality known as Don Cheto. Its purpose was to stream a Los Angeles radio station in Mexico, using a VPN-based restriction to prevent non-Mexican users from accessing the stream. The monetization strategy relied on showing an AdMob ad each time playback started. The app was released on both the App Store and Google Play. A major technical challenge was background audio: we initially started with React Native, but moved to fully native development on Android and iOS to meet playback requirements. I handled the UI/UX and developed the iOS app in Swift.",
+      "coverAlt": "Don Cheto App main view",
+      "gallery": {
+        "1": "Don Cheto App main view",
+        "2": "Don Cheto App main view",
+        "3": "Don Cheto App main view",
+        "4": "Don Cheto App main view",
+        "5": "Don Cheto App main view",
+        "6": "Don Cheto App main view",
+        "7": "Don Cheto App main view",
+        "8": "Don Cheto App main view",
+        "9": "Don Cheto App main view"
+      }
+    },
+    "cvlens": {
+      "title": "CVLens",
+      "description": "I created this app after noticing a recurring problem in recruiting: reviewing and comparing CVs at scale. I wanted to explore how AI could help analyze resumes in bulk, so I built CVLens as a fast experiment. I shipped the first version in a couple of days, using OpenRouter and testing several free models before settling on Gemini Flash 3. I shared it on LinkedIn and received strong feedback from the HR community. I did not continue maintaining it long-term—it was primarily a learning project built for experimentation and to let others try it.",
+      "coverAlt": "CVLens main view",
+      "gallery": {
+        "1": "CVLens main view",
+        "2": "CVLens main view",
+        "3": "CVLens main view",
+        "4": "CVLens main view",
+        "5": "CVLens main view",
+        "6": "CVLens main view",
+        "7": "CVLens main view",
+        "8": "CVLens main view",
+        "9": "CVLens main view",
+        "10": "CVLens main view",
+        "11": "CVLens main view",
+        "12": "CVLens main view",
+        "13": "CVLens main view"
+      }
+    },
+    "crieg": {
+      "title": "Crieg",
+      "description": "I collaborated on this project with a colleague who needed support building a web app for a small business that sells certifications for a radiology association. The client wanted to automate certification sales and manage them at scale. We built a web app that enables users to purchase and personalize certifications. The solution was implemented primarily with front-end technologies, while the back office was hosted in HubSpot to align with the client’s existing stack. It also includes an invoicing flow powered by the Alegra API for end-user purchases. I led the project over a few months, and my colleague currently handles ongoing maintenance.",
+      "coverAlt": "Crieg main view",
+      "gallery": {
+        "1": "Crieg main view",
+        "2": "Crieg main view",
+        "3": "Crieg main view",
+        "4": "Crieg main view",
+        "5": "Crieg main view",
+        "6": "Crieg main view",
+        "7": "Crieg main view",
+        "8": "Crieg main view",
+        "9": "Crieg main view",
+        "10": "Crieg main view",
+        "11": "Crieg main view",
+        "12": "Crieg main view",
+        "13": "Crieg main view"
+      }
+    },
+    "shopfloor-managment": {
+      "title": "Shopfloor Management",
+      "description": "This web app was designed to identify production issues at the Volkswagen plant in Silao, generate per-line/per-engine reports, and improve daily decision-making on the factory floor. We built it for a Guanajuato hackathon sponsored by Volkswagen, where we won the project. It was my first large-scale product, and it pushed me to level up across discovery, requirements gathering, pitch presentation, UI mockups, product design, and implementation. Although it wasn’t commercialized, it became a defining learning experience that significantly strengthened my web development skills.",
+      "coverAlt": "Shopfloor Management main view",
+      "gallery": {
+        "1": "Shopfloor Management main view",
+        "2": "Shopfloor Management main view",
+        "3": "Shopfloor Management main view",
+        "4": "Shopfloor Management main view",
+        "5": "Shopfloor Management main view",
+        "6": "Shopfloor Management main view",
+        "7": "Shopfloor Management main view"
+      }
+    },
+    "kiosko-movil-gto": {
+      "title": "Kiosko Móvil GTO",
+      "description": "This was our first state-level award-winning project. It enables users to complete administrative tasks from a mobile device and uses AI (via the OpenAI API) to streamline key workflows. The project is still in development and is intended for government agencies and/or private organizations looking to modernize and speed up administrative processes. The team consists of three software engineers, and I lead the UI/UX design while focusing on front-end development.",
+      "coverAlt": "Kiosko Móvil GTO main view",
+      "gallery": {
+        "1": "Kiosko Móvil GTO main view",
+        "2": "Kiosko Móvil GTO main view",
+        "3": "Kiosko Móvil GTO main view",
+        "4": "Kiosko Móvil GTO main view",
+        "5": "Kiosko Móvil GTO main view",
+        "6": "Kiosko Móvil GTO main view",
+        "7": "Kiosko Móvil GTO main view"
+      }
+    },
+
+    "midbar": {
+      "title": "Midbar",
+      "description": "Midbar is a mobile app designed to track workout routines through personalized training programs and activity logging. It was my first medium-sized solo project for a client, where I owned the product design and built the entire front end (excluding a few integrations due to parallel work streams). I took it on despite not being fully familiar with the tech stack at the time, and it turned out to be a strong success. The client—also a developer—was very satisfied with the outcome.",
+      "coverAlt": "Midbar main view",
+      "gallery": {
+        "1": "Midbar main view",
+        "2": "Midbar main view",
+        "3": "Midbar main view",
+        "4": "Midbar main view",
+        "5": "Midbar main view",
+        "6": "Midbar main view",
+        "7": "Midbar main view"
+      }
+    }
+  },
+  "about": {
+    "title": "About me",
+    "description-1": "Hi, I'm Ricardo, a software engineer with a strong passion for design. I love building things and designing them. I find it fascinating to turn simple ideas into functional products that also feel premium.",
+    "description-2": "In my free time, I enjoy a good movie and black coffee. I love going for walks, listening to music, and lately I've been getting back into exploring hills and natural places.",
+    "description-3": "I love building new projects simply for the joy of learning something new, and sometimes to solve a problem that could help someone I know.",
+    "experience": {
+      "title": "Experience",
+      "zeeto": {
+        "company": "Zeeto",
+        "role": "Front-end Developer & UI/UX Designer",
+        "meta": "United States • Remote • Full-time • 2024 - 2026",
+        "description": "I was part of the Optimization team, creating end-to-end experiences from design to implementation, including A/B experiments. My goal was to improve the user experience to increase conversion and monetization. I also built internal tools for the team, such as a Figma plugin and a tool to generate A/B variants at scale.",
+        "stack": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "ShadCN UI",
+          "Lottie",
+          "GSAP",
+          "Next.js",
+          "Vercel",
+          "Git",
+          "GitHub",
+          "Figma",
+          "Photoshop",
+          "Premiere Pro",
+          "Illustrator",
+          "Jira",
+          "Tailwind",
+          "Looker"
+        ]
+      },
+      "wicode": {
+        "company": "Wicode",
+        "role": "UI/UX Designer & Framer Developer",
+        "meta": "León, Gto. • Hybrid • Contract • 2024 - Current",
+        "description": "I design visual proposals and complete systems for clients across different industries, from requirements gathering to final development handoff. I also build websites in Framer. I contributed as a developer on an iOS (Swift) project for a pharmacy (ISSEG) in León, Gto.",
+        "stack": [
+          "Figma",
+          "Photoshop",
+          "Framer",
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "ClickUp"
+        ]
+      },
+      "penteon": {
+        "company": "Penteon",
+        "role": "Front-End Leader",
+        "meta": "Mexico City, Mexico • In-person • Full-time • 2024",
+        "description": "I led front-end development on a web project for an IoT company. I focused on refactoring and integrating an existing system, applying best practices to make it maintainable, scalable, and consistent. The tenure was short due to a city relocation and a growth opportunity.",
+        "stack": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "Storybook",
+          "Zustand",
+          "Next.js",
+          "Vercel",
+          "Git",
+          "GitHub",
+          "Figma",
+          "Jira",
+          "Tailwind",
+          "SCRUM"
+        ]
+      },
+      "cbqa": {
+        "company": "CBQA",
+        "role": "Front-End Developer & UI/UX Designer",
+        "meta": "León, Gto. • Hybrid • Full-time • 2023 - 2024",
+        "description": "I built web and mobile solutions for enterprise clients (Heineken, Toyota, and Orkos), delivering scalable applications with React, Next.js, Redux Toolkit, and TypeScript. I implemented Flutter apps with an offline-first approach, increasing engagement. I led UI systems and flows in Figma to ensure consistency and correct implementation. I integrated AWS services and CI/CD pipelines to reduce production incidents.",
+        "stack": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "Node.js",
+          "Express",
+          "Next.js",
+          "Git",
+          "GitHub",
+          "Figma",
+          "Jira",
+          "Tailwind",
+          "SCRUM",
+          "AWS"
+        ]
+      },
+      "setenal": {
+        "company": "Setenal",
+        "role": "Front-End Developer & Designer",
+        "meta": "Zapopan, Jalisco • Remote • Full-time • 2022 - 2023",
+        "description": "I focused on improving the UI/UX of an automotive tire maintenance system. I developed and maintained the web app using React, Redux Toolkit, and JavaScript, led the redesign in Figma to make the product more intuitive, and managed version control with Git and GitLab.",
+        "stack": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "TypeScript",
+          "React",
+          "Redux Toolkit",
+          "Next.js",
+          "Git",
+          "GitHub",
+          "Figma",
+          "Jira",
+          "Tailwind",
+          "SCRUM"
+        ]
+      },
+      "yocontigo": {
+        "company": "YoContigo",
+        "role": "Front-End Developer & Designer",
+        "meta": "León, Gto. • Hybrid • Part-time • 2021 - 2022",
+        "description": "My first professional experience as an intern: I worked on web development and design using HTML, CSS, and JavaScript, plus a bit of PHP. I also supported design work in Figma and Photoshop. Most of the work involved WordPress and WooCommerce.",
+        "stack": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "PHP",
+          "WordPress",
+          "WooCommerce",
+          "Figma",
+          "Photoshop"
+        ]
+      }
+    }
   }
 }

@@ -1,12 +1,13 @@
 import type { ReactNode } from 'react';
-
 import { Inter } from 'next/font/google';
-
 import type { Metadata } from 'next';
 
 import '@/src/app/globals.css';
 import SmoothScrolling from '@/src/components/layout/SmoothScrolling';
-import AsideComponent from '@/src/components/layout/AsideComponent';
+import {
+  DesktopAside,
+  MobileAside,
+} from '@/src/components/layout/AsideComponent';
 import { ProgressiveBlur } from '@/src/components/ui/progressive-blur';
 import { routing } from '@/src/i18n/routing';
 import { notFound } from 'next/navigation';
@@ -40,16 +41,25 @@ export default async function RootLayout({
 
   return (
     <html lang={locale} data-theme="light">
-      <body className={`${inter.variable} font-sans`}>
+      <body className={`${inter.variable} overflow-x-hidden font-sans`}>
         <NextIntlClientProvider messages={messages}>
           <SmoothScrolling>
-            <div className="relative mx-auto flex w-full max-w-7xl gap-12 px-4">
-              <AsideComponent />
-              <div className="relative z-10 mt-8 flex-1 pb-12">
-                {children}
-                <div className="fixed bottom-0 left-0 h-12 w-full">
-                  <ProgressiveBlur height="100%" position="bottom" />
-                </div>
+            <div className="relative mx-auto w-full max-w-7xl px-4">
+              {/* Mobile header + drawer */}
+              <MobileAside />
+
+              <div className="flex w-full flex-col md:flex-row md:gap-12">
+                {/* Desktop aside */}
+                <DesktopAside />
+
+                {/* Main content */}
+                <main className="relative z-10 flex-1 pt-6 pb-12 md:pt-8">
+                  {children}
+
+                  <div className="fixed bottom-0 left-0 h-12 w-full">
+                    <ProgressiveBlur height="100%" position="bottom" />
+                  </div>
+                </main>
               </div>
             </div>
           </SmoothScrolling>

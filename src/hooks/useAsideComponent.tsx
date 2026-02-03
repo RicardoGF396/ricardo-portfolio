@@ -2,6 +2,7 @@ import { Variants } from 'framer-motion';
 import { useLocale, useTranslations } from 'next-intl';
 import { usePathname, useRouter } from '@/src/i18n/routing';
 import { useEffect, useMemo, useState } from 'react';
+import { SOFTWARE_PROJECTS } from '../content/software-projects';
 
 export function useAsideComponent() {
   const [isOpenSoftwareProjects, setIsOpenSoftwareProjects] = useState(false);
@@ -11,49 +12,15 @@ export function useAsideComponent() {
   const router = useRouter();
   const pathname = usePathname();
   const translations = useTranslations('aside');
+  const currentPath = normalizePath(pathname);
+  const isOnSoftwareDetail = currentPath.includes('/software/');
 
-  const projectLinks = [
-    {
-      label: translations('nav.software.naveo'),
-      link: '/naveo',
-    },
-    {
-      label: translations('nav.software.pura-banda'),
-      link: '/pura-banda',
-    },
-    {
-      label: translations('nav.software.adgen'),
-      link: '/adgen',
-    },
-    {
-      label: translations('nav.software.don-cheto-app'),
-      link: '/don-cheto-app',
-    },
-    {
-      label: translations('nav.software.cvlens'),
-      link: '/cvlens',
-    },
-    {
-      label: translations('nav.software.crieg'),
-      link: '/crieg',
-    },
-    {
-      label: translations('nav.software.shopfloor-managment'),
-      link: '/shopfloor-managment',
-    },
-    {
-      label: translations('nav.software.kiosko-movil-gto'),
-      link: '/kiosko-movil-gto',
-    },
-    {
-      label: translations('nav.software.midbar'),
-      link: '/midbar',
-    },
-    {
-      label: translations('nav.software.more'),
-      link: '/more',
-    },
-  ];
+  const projectLinks = useMemo(() => {
+    return SOFTWARE_PROJECTS.map((p) => ({
+      label: translations(p.labelKey),
+      link: `/software/${p.slug}`,
+    }));
+  }, [translations]);
 
   const containerVariants: Variants = {
     closed: {
@@ -108,10 +75,26 @@ export function useAsideComponent() {
     router.replace(pathname, { locale: nextLocale });
   };
 
+  function stripLocalePrefix(path: string) {
+    const normalized = normalizePath(path);
+    return normalized.replace(/^\/(en|es)(?=\/|$)/, '');
+  }
+
+  function normalizePath(path: string) {
+    if (path.length > 1 && path.endsWith('/')) return path.slice(0, -1);
+    return path;
+  }
+
   useEffect(() => {
     const intervalId = window.setInterval(() => setNow(new Date()), 1000);
     return () => window.clearInterval(intervalId);
   }, []);
+
+  useEffect(() => {
+    if (isOnSoftwareDetail) {
+      setIsOpenSoftwareProjects(true);
+    }
+  }, [isOnSoftwareDetail, setIsOpenSoftwareProjects]);
 
   return {
     isOpenSoftwareProjects,
@@ -125,5 +108,9 @@ export function useAsideComponent() {
     toggleLanguage,
     locale,
     translations,
+    stripLocalePrefix,
+    normalizePath,
+    currentPath,
+    isOnSoftwareDetail,
   };
 }

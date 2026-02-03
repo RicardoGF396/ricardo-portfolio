@@ -6,9 +6,10 @@ interface AsideLinkProps {
   label: string;
   type?: 'main' | 'sub';
   externalLink?: boolean;
+  onClick?: () => void;
 }
 
-export function AsideLink({ href, label, type, externalLink }: AsideLinkProps) {
+export function AsideLink({ href, label, type, externalLink, onClick }: AsideLinkProps) {
   return (
     <li className={twMerge('w-fit text-foreground', type === 'sub' && 'ml-2')}>
       <Link
@@ -19,6 +20,7 @@ export function AsideLink({ href, label, type, externalLink }: AsideLinkProps) {
           'cursor-pointer hover:underline',
           externalLink && 'cursor-alias',
         )}
+        onClick={onClick}
       >
         {label}
       </Link>

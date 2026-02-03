@@ -1,3 +1,7 @@
+'use client';
+
+import { createPortal } from 'react-dom';
+import { useEffect, useState } from 'react';
 import CVFolder from './CVFolder';
 
 interface CVContainerProps {
@@ -7,9 +11,14 @@ interface CVContainerProps {
 export default function CVContainer({
   setIsCVContainerOpen,
 }: CVContainerProps) {
-  return (
+  const [mounted, setMounted] = useState(false);
+
+  useEffect(() => setMounted(true), []);
+  if (!mounted) return null;
+
+  return createPortal(
     <div
-      className="fixed top-0 left-0 z-50 flex size-full items-center justify-center border bg-white/50 dark:bg-black/50 backdrop-blur-2xl"
+      className="fixed inset-0 z-100 flex items-center justify-center bg-white/50 backdrop-blur-2xl dark:bg-black/50"
       onClick={() => setIsCVContainerOpen(false)}
       role="dialog"
       aria-modal="true"
@@ -18,6 +27,7 @@ export default function CVContainer({
         <CVFolder language="en" />
         <CVFolder language="es" />
       </div>
-    </div>
+    </div>,
+    document.body,
   );
 }
