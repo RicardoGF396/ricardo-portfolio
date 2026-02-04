@@ -20,11 +20,11 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: 'ricardogf',
+  title: 'Ricardo ✌',
   description: 'Personal site',
   icons: {
-    icon: "/favicon.ico"
-  }
+    icon: '/favicon.ico',
+  },
 };
 
 export default async function RootLayout({
