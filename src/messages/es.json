@@ -31,6 +31,58 @@
     "actions": { "cv": "Currículum" },
     "location": "León, Guanajuato, México"
   },
+  "home": {
+    "projects": {
+      "naveo": { "info": "Software • App Naveo" },
+      "tools": { "info": "Trabajo • Herramientas que uso" },
+
+      "bruno": { "alt": "Bruno", "info": "Mascota • Este es Bruno" },
+      "walks": {
+        "alt": "Yo enfrente de \"Los Panales\"",
+        "info": "Hobby • Salir a caminar"
+      },
+
+      "adgen": { "info": "Software • App Adgen" },
+      "cvlens": { "info": "Software • CVLens" },
+      "reading": { "info": "Hobby • Lectura" },
+      "cds": { "info": "Sobre mí • CDs" },
+
+      "interstellar": {
+        "alt": "Interstellar, mi película favorita",
+        "info": "Sobre mí • Mi película favorita"
+      },
+
+      "puraBanda": { "info": "Software • App Pura Banda" },
+
+      "firstPortfolio": {
+        "alt": "Software • Mi primer portafolio",
+        "info": "Software • Mi primer portafolio"
+      },
+
+      "japanTrip": {
+        "alt": "Sobre mí • Viaje a Japón",
+        "info": "Sobre mí • Viaje a Japón"
+      },
+      "hackathon": {
+        "alt": "Sobre mí • 1er lugar en un hackathon",
+        "info": "Sobre mí • 1er lugar en un hackathon"
+      }
+    },
+
+    "hover": {
+      "book": {
+        "title": "The Creative Act",
+        "authorPrefix": "por"
+      },
+      "cds": {
+        "song": "We don't believe what's on tv (acoustic)",
+        "favoriteSong": "Canción favorita",
+        "favoriteArtist": "Artista favorito",
+        "favoritePodcast": "Podcast favorito",
+        "podcastName": "Cracks Podcast"
+      }
+    }
+  },
   "photos": {
     "info": "Fotografía • Algo de mí"
   },

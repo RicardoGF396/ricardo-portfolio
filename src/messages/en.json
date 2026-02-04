@@ -31,6 +31,58 @@
     "actions": { "cv": "Resume" },
     "location": "León, Guanajuato, Mexico"
   },
+  "home": {
+    "projects": {
+      "naveo": { "info": "Software • Naveo App" },
+      "tools": { "info": "Work • Tools I use" },
+
+      "bruno": { "alt": "Bruno", "info": "Pet • This is Bruno" },
+      "walks": {
+        "alt": "Me in front of \"Los Panales\"",
+        "info": "Hobby • Take long walks"
+      },
+
+      "adgen": { "info": "Software • Adgen App" },
+      "cvlens": { "info": "Software • CVLens" },
+      "reading": { "info": "Hobby • Reading" },
+      "cds": { "info": "About me • CDs" },
+
+      "interstellar": {
+        "alt": "Interstellar, my favorite movie",
+        "info": "About me • My favorite movie"
+      },
+
+      "puraBanda": { "info": "Software • Pura Banda App" },
+
+      "firstPortfolio": {
+        "alt": "Software • My first portfolio",
+        "info": "Software • My first portfolio"
+      },
+
+      "japanTrip": {
+        "alt": "About me • My Japan Trip",
+        "info": "About me • My Japan Trip"
+      },
+      "hackathon": {
+        "alt": "About me • 1st place in a hackathon",
+        "info": "About me • 1st place in a hackathon"
+      }
+    },
+
+    "hover": {
+      "book": {
+        "title": "The Creative Act",
+        "authorPrefix": "by"
+      },
+      "cds": {
+        "song": "We don't believe what's on tv (acoustic)",
+        "favoriteSong": "Favorite Song",
+        "favoriteArtist": "Favorite Artist",
+        "favoritePodcast": "Favorite Podcast",
+        "podcastName": "Cracks Podcast"
+      }
+    }
+  },
   "photos": {
     "info": "Photography • A glimpse of my life"
   },

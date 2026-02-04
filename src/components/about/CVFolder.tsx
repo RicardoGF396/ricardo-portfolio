@@ -7,8 +7,8 @@ export default function CVFolder({ language }: CVFolderProps) {
     <a
       href={
         language === 'es'
-          ? 'https://ahmbzaaiwzglvhtpotvp.supabase.co/storage/v1/object/public/portafolio/Ricardo_Gonzalez_Flores_CV.docx.pdf'
-          : 'https://ahmbzaaiwzglvhtpotvp.supabase.co/storage/v1/object/public/portafolio/Ricardo_Gonzalez_Flores_Resume.docx.pdf'
+          ? 'https://ahmbzaaiwzglvhtpotvp.supabase.co/storage/v1/object/public/portafolio/Ricardo_Gonzalez_Flores_CV.pdf'
+          : 'https://ahmbzaaiwzglvhtpotvp.supabase.co/storage/v1/object/public/portafolio/Ricardo_Gonzalez_Flores_Resume.pdf'
       }
       target="_blank"
       rel="noopener noreferrer"
@@ -32,7 +32,7 @@ export default function CVFolder({ language }: CVFolderProps) {
         />
       </div>
 
-      <p className="bg-blur-sm w-fit rounded-sm bg-black/40 dark:bg-white/80 px-2 py-0.5 text-sm text-white dark:text-black transition-colors duration-300 group-hover:bg-black/60">
+      <p className="bg-blur-sm w-fit rounded-sm bg-black/40 px-2 py-0.5 text-sm text-white transition-colors duration-300 group-hover:bg-black/60 dark:bg-white/80 dark:text-black">
         {language === 'es' ? 'Español' : 'English'}
       </p>
     </a>

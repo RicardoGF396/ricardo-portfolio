@@ -1,7 +1,7 @@
 'use client';
 
 import { AnimatePresence, motion } from 'framer-motion';
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import { X, Menu } from 'lucide-react';
 
 import { AsideLink } from './AsideLink';
@@ -12,7 +12,6 @@ import { Link } from '@/src/i18n/routing';
 import { usePathname } from 'next/navigation';
 
 function AsideContent({ onNavigate }: { onNavigate?: () => void }) {
-  const pathname = usePathname();
 
   const {
     isOpenSoftwareProjects,

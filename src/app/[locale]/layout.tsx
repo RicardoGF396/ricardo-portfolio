@@ -48,7 +48,7 @@ export default async function RootLayout({
               {/* Mobile header + drawer */}
               <MobileAside />
 
-              <div className="flex w-full flex-col md:flex-row md:gap-12">
+              <div className="flex w-full flex-col md:flex-row md:gap-2">
                 {/* Desktop aside */}
                 <DesktopAside />
 

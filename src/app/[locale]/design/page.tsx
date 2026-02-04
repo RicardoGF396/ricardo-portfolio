@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useMemo, useState } from 'react';
-import ProjectImage from '@/src/components/ProjectImage';
+import ProjectImage from '@/src/components/common/ProjectImage';
 import { GRID_DESIGN } from '@/src/content/grid-design';
 import { useTranslations } from 'next-intl';
 import { useIntersectionObserver } from '@/src/hooks/useIntersectionObserver';

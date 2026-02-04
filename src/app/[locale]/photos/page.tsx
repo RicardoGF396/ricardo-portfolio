@@ -1,5 +1,5 @@
 import { GRID_PHOTOS } from '@/src/content/grid-photos';
-import ProjectImage from '@/src/components/ProjectImage';
+import ProjectImage from '@/src/components/common/ProjectImage';
 import { useTranslations } from 'next-intl';
 import { BlurFade } from '@/src/components/ui/blur-fade';
 
