@@ -22,6 +22,9 @@ const inter = Inter({
 export const metadata: Metadata = {
   title: 'ricardogf',
   description: 'Personal site',
+  icons: {
+    icon: "/favicon.ico"
+  }
 };
 
 export default async function RootLayout({
