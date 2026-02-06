@@ -22,7 +22,7 @@ export default function CVFolder({ language }: CVFolderProps) {
         />
         <img
           className="animate-all absolute bottom-0 left-3 z-10 w-[100px] duration-300 group-hover:translate-x-4 group-hover:-translate-y-4 group-hover:rotate-10"
-          src="/paper.png"
+          src="/Paper.png"
           alt="paper"
         />
         <img
