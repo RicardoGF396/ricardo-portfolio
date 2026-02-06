@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import { Inter } from 'next/font/google';
 import type { Metadata } from 'next';
+import { Analytics } from '@vercel/analytics/next';
 
 import '@/src/app/globals.css';
 import SmoothScrolling from '@/src/components/layout/SmoothScrolling';
@@ -45,6 +46,7 @@ export default async function RootLayout({
   return (
     <html lang={locale} data-theme="light">
       <body className={`${inter.variable} overflow-x-hidden font-sans`}>
+        <Analytics />
         <NextIntlClientProvider messages={messages}>
           <SmoothScrolling>
             <div className="relative mx-auto w-full max-w-7xl px-4">
