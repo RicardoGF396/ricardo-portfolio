@@ -14,6 +14,7 @@ type ExperienceItem = {
 
 type ExperienceTranslations = {
   title: string;
+  cloudgenia: ExperienceItem;
   zeeto: ExperienceItem;
   wicode: ExperienceItem;
   penteon: ExperienceItem;

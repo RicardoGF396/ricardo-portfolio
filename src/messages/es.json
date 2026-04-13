@@ -294,10 +294,32 @@
     "description-3": "Me encanta desarrollar proyectos nuevos, simplemente por el gusto de aprender algo nuevo e incluso resolver algún problema que pueda ayudar a alguien que conozca.",
     "experience": {
       "title": "Experiencia",
+      "cloudgenia": {
+        "company": "Cloudgenia",
+        "role": "Líder UX/UI Developer",
+        "meta": "León, Gto. • Presencial • Full-time • 2026 - actual",
+        "description": "Líder del equipo de Diseño, responsable del diseño y desarrollo de 12 proyectos en un año para el Gobierno del Estado de Guanajuato, México. Gestioné el proceso completo de cada proyecto: investigación, diseño, análisis, prototipado, handoff e implementación. Administré al equipo de diseño y en conjunto construimos una librería completa de componentes en Angular. En el día a día, coordiné la toma de requerimientos con los equipos de Guanajuato y Cloudgenia, lideré el análisis de soluciones y supervisé la creación de componentes en Figma y Angular para su posterior implementación. Generé reportes y planeaciones mensuales para definir alcances concretos por Sprint.",
+        "stack": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "TypeScript",
+          "Angular",
+          "Ant Design",
+          "AWS",
+          "Git",
+          "GitHub",
+          "Figma",
+          "Storybook",
+          "ClickUp",
+          "Tailwind",
+          "Looker"
+        ]
+      },
       "zeeto": {
         "company": "Zeeto",
         "role": "Front-end Developer & UI/UX Designer",
-        "meta": "United States • Remote • Full-time • 2024 - 2026",
+        "meta": "United States • Remoto • Full-time • 2024 - 2026",
         "description": "Formé parte del equipo de Optimización, creando experiencias completas de diseño a implementación, incluyendo experimentos A/B. Mi objetivo fue mejorar la experiencia del usuario para incrementar conversión y monetización. Además, desarrollé herramientas internas para el equipo, como un plugin de Figma y una herramienta para generar variantes de A/B a escala.",
         "stack": [
           "HTML",
@@ -385,7 +407,7 @@
       "setenal": {
         "company": "Setenal",
         "role": "Front-End Developer & Designer",
-        "meta": "Zapopan, Jalisco • Remote • Full-time • 2022 - 2023",
+        "meta": "Zapopan, Jalisco • Remoto • Full-time • 2022 - 2023",
         "description": "Me enfoqué en mejorar UI/UX de un sistema automotriz de mantenimiento de llantas. Desarrollé y mantuve la web app con React, Redux Toolkit y JavaScript, lideré el rediseño en Figma para hacer el producto más intuitivo y gestioné versionado con Git y GitLab.",
         "stack": [
           "HTML",

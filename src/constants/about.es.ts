@@ -7,6 +7,7 @@ export type ExperienceItem = {
 };
 
 export const EXPERIENCES: ExperienceItem[] = [
+  
   {
     company: 'Zeeto',
     role: 'Front-end Developer & UI/UX Designer',

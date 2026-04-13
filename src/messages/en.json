@@ -295,6 +295,28 @@
     "description-3": "I love building new projects simply for the joy of learning something new, and sometimes to solve a problem that could help someone I know.",
     "experience": {
       "title": "Experience",
+      "cloudgenia": {
+        "company": "Cloudgenia",
+        "role": "UX/UI Design Lead",
+        "meta": "León, Gto. • On-site • Full-time • 2026 - Current",
+        "description": "Design Team Lead responsible for the design and development of 12 projects in one year for the Government of the State of Guanajuato, Mexico. Managed the full lifecycle of each project: research, design, analysis, prototyping, handoff, and implementation. Led the design team and collectively built a complete component library in Angular. On a day-to-day basis, coordinated requirements gathering with both the Guanajuato and Cloudgenia teams, led solution analysis, and oversaw the creation of components in Figma and Angular for subsequent implementation. Generated monthly reports and planning sessions to define concrete sprint-level goals.",
+        "stack": [
+          "HTML",
+          "CSS",
+          "JavaScript",
+          "TypeScript",
+          "Angular",
+          "Ant Design",
+          "AWS",
+          "Git",
+          "GitHub",
+          "Figma",
+          "Storybook",
+          "ClickUp",
+          "Tailwind",
+          "Looker"
+        ]
+      },
       "zeeto": {
         "company": "Zeeto",
         "role": "Front-end Developer & UI/UX Designer",
