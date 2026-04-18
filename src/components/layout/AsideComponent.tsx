@@ -157,7 +157,6 @@ function AsideContent({ onNavigate }: { onNavigate?: () => void }) {
               label="Email"
               externalLink
             />
-            <AsideLink href="tel:+524774122683" label="Phone" externalLink />
             <AsideLink
               href="https://github.com/RicardoGF396"
               label="Github"
